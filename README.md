@@ -1,2 +1,3 @@
 # C-Plus-Plus
-C++ notes
+
+C++ Notes
