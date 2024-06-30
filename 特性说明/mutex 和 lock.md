@@ -144,7 +144,7 @@ void lock(Lock1& lock1, Lock2& lock2,LockN&... lockN);
 
 该函数一次锁定多个互斥量，用于处理多个互斥量。使用死锁避免算法锁定给定的对象，如果有一个没锁住，就会把已经锁住的释放掉，然后等待，直到所有互斥量都可以同时锁住，才继续执行。（要么互斥量都锁住，要么都没锁住，防止死锁）
 
-`s`td::scoped_lock`为此函数提供了RAII包装器，通常优于对`std::lock`的裸调用。
+`std::scoped_lock`为此函数提供了RAII包装器，通常优于对`std::lock`的裸调用。
 
 ## 3.2 scoped_lock
 
